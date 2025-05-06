@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/register", UserController.register);
+app.post("/login", UserController.login);
 
 app.listen(3000, () => {
   console.log(`Server is running on port ${PORT}`);
